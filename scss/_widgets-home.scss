@@ -1,0 +1,66 @@
+.grid_container_home {
+    display: grid;
+    position: relative;
+    background-color: #eee;
+    grid-template-columns: repeat (3, minmax(auto, 540px));
+    // grid-template-rows: repeat (3, 200px);
+    grid-template-areas: 
+    "g1 g2 g2"
+    "g1 g3 g4"
+    "g5 g6 g4";
+    height: 400px;
+    // width: 100vw;
+    grid-gap: 5px;
+}
+.g {
+    position: relative;
+}
+// .g img {
+//     position: absolute;
+//     object-fit: cover
+// }
+.g1{
+    // background-color: red;
+    grid-area: g1;
+    background-image: url("../images/Singaporean-Culture-Quirks-10.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.g2 {
+    // background-color: blue;
+    background-image: url("../images/history-sg.jpg");
+    background-repeat: no-repeat;
+    grid-area: g2;
+    background-position: center;
+    background-size: cover;
+
+}
+.g3 {
+    // background-color: burlywood;
+    background-image: url("../images/food/hainanese-chicken-lg-691.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: g3}
+.g4 {
+    // background-color: green;
+    background-image: url("../images/cny-celebration-marinabay.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: g4}
+.g5 {
+    // background-color: yellow;
+    background-image: url("../images/jurassicworld.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: g5}
+.g6 {
+    // background-color: gray;
+    background-image: url("../images/airline.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: g6}

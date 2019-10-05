@@ -1,0 +1,315 @@
+     /* grid mobile */
+     .grid-container {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: repeat(3, 250px);
+        grid-row-gap: 5px;
+        grid-template-areas: 
+        "food1"
+        "food2"
+        "food3";
+    }
+
+    .food {
+      position: relative;
+      display: block;
+    }
+       .food1 {
+         background-image: url("../images/v4/mussel.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         grid-area:food1;
+       }
+       .food2 {
+         background-image: url("../images/v4/salad.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         grid-area:food2;
+       }
+       .food3{
+         background-image: url("../images/v4/pancake.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         grid-area:food3;
+       }
+   
+       .food .food-caption h2{
+         display: block;
+         position: absolute;
+         bottom: 0;
+         margin: 0;
+         padding: 0;
+         width: 100%;
+         color: white;
+         font-size: 1.5em;
+         background-color: rgba(0, 0, 0, 0.7);
+         line-height: 55px;
+         padding-left: 20px;
+       }
+   
+    /* section mobile */
+   
+    .section {
+       margin-top: 20px;
+       background-color: white;
+       padding: 10px; 
+       min-height: 400px;  
+    }
+     .section h1 {
+       display: block;
+       margin: 0;
+       padding: 0;
+     }
+    .section h2 {
+      display: block;
+      font-size: 1.1rem;
+      padding: 6px 0 10px 0;
+    }
+    .section img {
+      margin: 10px 0;
+    }
+    .section p {
+     font-size: 1.5rem;
+   }
+    .button {
+      float: right;
+      color: red;
+      background-color: rgb(0, 60, 160);
+      padding: 5px;
+      margin-top: 20px;
+    }
+ 
+    .prev-post {
+      display: flex;
+      width: 100%;
+      height: 100px;
+      font-size: 2rem;
+      align-items: center;
+       margin-top: 20px;
+     }
+    .prev-post h1{
+     color: rgb(0, 60, 160);
+     font-weight: 550;
+     /* line-height: 30px; */
+     margin-left: 6px;
+ 
+    }
+    .prev-post img {
+      width: 30px;
+      height: 30px;
+    }
+    
+   
+
+    // .footer-container {
+    //  display: block;
+    //  background-color: rgb(0, 60, 160);
+    //  height: 100%;
+    //  /* padding: 10px 0; */
+    //  width: 100%;
+  
+    //  /* min-width: 600px; */
+    //  margin: 0 auto;
+    //  position: absolute;
+    //  bottom: 0;
+    // transform: translateY(100px);
+    //  z-index: 9999;
+    // }
+.side {
+  display: none;
+}
+// queries
+@media (min-width: 460px) {
+  //   .wrapper {
+  //     /* min-width: 460px; */
+  //     max-width: 960px;
+  //  }
+ }
+@media (min-width: 768px) {
+// .wrapper {
+//   min-width: 768px;
+// }
+/* .search {
+  display: none;
+} */
+/* .nav-second li .search {
+  display: none;
+} */
+
+   .outer-grid {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    grid-template-areas:
+    "body";
+  }
+   .grid-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 250px) repeat(2,max-content);
+    /* row-gap: 40px; */
+    grid-template-areas: 
+    "food1 food1"
+    "food2 food3"
+    "section1 section1"
+    "section2 section2";
+    grid-area: body;
+   }
+  
+  .section1 {
+    grid-area: section1;
+  }
+  .section2 {
+    grid-area: section2;
+  }
+ }
+ @media (max-width: 1024px) {
+   .search-container2 {
+     display: none;
+   }
+   .search-container2 img {
+     display: none;
+   }
+   .nav-wrapper {
+     width: 100%;
+   }
+   .nav-second {
+    //  width: 90%;
+    width: 100%;
+   }
+ }
+ @media (min-width: 1024px) {
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: auto;
+ }
+ 
+
+ .nav-second li .search {
+  display: flex;
+  justify-content: end;
+  background-color: #fff;
+  width: 100%;
+  margin-left: auto;
+  }
+  .nav-second li .search img {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+  }
+
+  .flex-container {
+    display: flex;
+    position: relative;
+  }
+.social {
+display: flex;
+/* flex:1; */
+}
+  .search-container1 {
+    display: none;
+  }
+  .search1 {
+    display: none;
+  }
+  /* position container to the right, img follows */
+  .search-container2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 40px;
+    min-width: 25%;
+  }
+  .search {
+    height: 40px;
+  }
+  /* position image inside to right */
+  .search-container2 img {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right:10px;
+  }
+
+  .search {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    min-width: 100px;
+    margin-left: auto;
+  }
+
+   .grid-container {
+    // grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, 250px) repeat(2,max-content);
+    /* row-gap: 40px; */
+    grid-template-areas: 
+    "food1 food1 side"
+    "food2 food3 ."
+    "section1 section1 ."
+    "section2 section2 .";
+    grid-area: body;
+   }
+
+   .side {
+    display: block;
+    margin-left: 10px;
+  }
+  
+
+  .side1 h1, .side2 h1 {
+    display: block;
+    color: white;
+    background-color: rgb(0, 60, 160);
+    line-height: 44px;
+    padding: 15px;
+    
+  }
+
+  .side1-img1, .side1-img2, .side1-img3, .side1-img4 {
+    width: 60px;
+    height: 60px;
+    border: 5px rgb(0, 60, 160);
+  }
+
+  .side1-container1, .side1-container3 {
+    background-color: #eee;
+  }
+
+  .side1-container2, .side1-container4 {
+    background-color: rgb(170, 170, 170);
+  }
+  .side1-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+  }
+ }
+
+ //book
+ @media (min-width: 1024px) {
+  .grid-container {
+    display: grid;
+    // recreate the structure of the country page into a grid
+    // add the sidenav at 1024px
+
+  }
+ }
+//  .cuisine-contents {
+//    width: 100%;
+//  }
+
+//  .cuisine-content-1 img{
+//     box-shadow: 0 1px 4px(rgba(0, 0 ,0,.2));
+//   border-radius: 3px;
+//   width: 100%;
+//   background-color: red;
+//   margin: 0 auto;
+//   height: 200px;
+//   object-fit: cover;
+//   object-position: center 72%;
+// }

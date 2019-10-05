@@ -1,0 +1,14 @@
+// page layouts
+@import 'layout';
+@import 'layout-cuisine';
+@import 'nav';
+
+//widgets 
+@import 'tabs.scss'; //cusine
+@import 'widgets-home';
+
+//reset
+@import 'reset';
+
+//typography
+@import 'typography';

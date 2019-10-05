@@ -1,0 +1,10 @@
+#country v2
+User-agent: *
+Disallow: http://noentoro.bcitwebdeveloper.ca/Business/activities.html	
+Disallow: http://noentoro.bcitwebdeveloper.ca/Singapore/raw-images/
+Disallow: http://noentoro.bcitwebdeveloper.ca/Singapore/image/
+Disallow: http://noentoro.bcitwebdeveloper.ca/Singapore/images/food/hainanese-chicken-lg-691.jpg
+Disallow: http://noentoro.bcitwebdeveloper.ca/Singapore/images/history-sg.jpg
+
+
+Crawl-delay: 20
